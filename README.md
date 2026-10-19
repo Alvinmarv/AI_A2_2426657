@@ -208,6 +208,8 @@ AI_A2_2426657/
 ├── README.md
 ├── docs/
 │   └── AI_A2_2426657_REPORT.md
+│   ├── AI_A2_2426657_REPORT.pdf
+│   └── build_report.py
 ├── evidence/
 │   └── AI_USE.md
 ├── data/
@@ -233,9 +235,15 @@ AI_A2_2426657/
   └── test_api.py
 ```
 
-The Markdown report and AI-use disclosure are source drafts. The required
-final report PDF, continuous demo MP4, test-log PDF, signed declaration PDF,
-and `AI_A2_2426657.zip` have not been produced yet.
+The report PDF is generated at `docs/AI_A2_2426657_REPORT.pdf`. Rebuild it after
+editing the report source with:
+
+```bash
+python docs/build_report.py
+```
+
+The continuous demo MP4, test-log PDF, signed declaration PDF, and
+`AI_A2_2426657.zip` remain to be produced.
 
 ## 11. Limitations and Responsible Use
 

@@ -1,12 +1,15 @@
 # Musanze Harvest Intelligence Service: Technical Report
 
-**Assignment:** AI Assignment 2
-**Student:** Mugabo Alvin Marvin
-**Registration:** 24/26657
-**Institutional username:** ug2426657@ines.ac.rw
-**Verification code:** AI-A2-6657
-**Seed:** 6657
-**Dataset SHA-256:** `ba50b841d0210e5d158289c4ff206d953e96a446ec325d714f5c88ead892e6c2`
+- **Assignment:** AI Assignment 2
+- **Student:** Mugabo Alvin Marvin
+- **Registration:** 24/26657
+- **Institutional username:** ug2426657@ines.ac.rw
+- **Verification code:** AI-A2-6657
+- **Seed:** 6657
+- **Repository:** https://github.com/Alvinmarv/AI_A2_2426657
+- **Source commit:** `e8af733a4e25f384464a0ff289f4421823b1dff4`
+- **Repository HEAD when this report was prepared:** `a2f8eea2cacb54a7f878167083e4ddb431634ce8`
+- **Dataset SHA-256:** `ba50b841d0210e5d158289c4ff206d953e96a446ec325d714f5c88ead892e6c2`
 
 ## Problem and data
 
@@ -78,4 +81,4 @@ The dataset is small and synthetic, and metrics come from one fixed split. They 
 
 ## Submission status
 
-The student identity and source commit are recorded. Export this report to the required PDF name, and provide the independently produced demo video, test-log PDF, and signed declaration. Those items must reflect the student's own work and must not be fabricated.
+This report is provided as `docs/AI_A2_2426657_REPORT.pdf`, with its Markdown source and reproducible builder alongside it. The independently produced demo video, test-log PDF, and signed declaration remain separate submission items and must reflect the student's own work.
