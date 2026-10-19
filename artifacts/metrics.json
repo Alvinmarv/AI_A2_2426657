@@ -1,0 +1,178 @@
+{
+  "project": "Musanze Harvest Intelligence Service",
+  "registration": "24/26657",
+  "verification_code": "AI-A2-6657",
+  "cleaning": {
+    "rows_before_cleaning": 258,
+    "duplicate_rows_removed": 3,
+    "missing_values_before_cleaning": {
+      "soil_moisture_pct": 13,
+      "fertilizer_kg": 13
+    },
+    "sha256": "ba50b841d0210e5d158289c4ff206d953e96a446ec325d714f5c88ead892e6c2",
+    "rows_after_cleaning": 255
+  },
+  "regression": {
+    "mean_baseline": {
+      "mae": 1.9316562860438284,
+      "rmse": 2.4496685093540465,
+      "r2": -0.000889686786762045
+    },
+    "linear_regression": {
+      "mae": 0.8905641300645133,
+      "rmse": 1.1729879888674926,
+      "r2": 0.7705126739173991
+    },
+    "random_forest": {
+      "mae": 1.2788264705882346,
+      "rmse": 1.54608764299661,
+      "r2": 0.6013059138342894
+    },
+    "selected_model": "linear_regression",
+    "selection_criterion": "Lowest test RMSE across the mean baseline and two candidates.",
+    "residual_analysis": {
+      "definition": "actual minus predicted yield, in tons",
+      "mean_bias": -0.12410484101067053,
+      "standard_deviation": 1.1664042225854296,
+      "maximum_absolute_error": 4.348798382598323,
+      "interpretation": "Positive mean bias indicates underprediction; negative mean bias indicates overprediction."
+    }
+  },
+  "classification": {
+    "majority_baseline": {
+      "accuracy": 0.5098039215686274,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "roc_auc": 0.5,
+      "confusion_matrix": [
+        [
+          26,
+          0
+        ],
+        [
+          25,
+          0
+        ]
+      ],
+      "error_counts": {
+        "true_negative": 26,
+        "false_positive": 0,
+        "false_negative": 25,
+        "true_positive": 0
+      }
+    },
+    "logistic_regression": {
+      "accuracy": 0.8823529411764706,
+      "precision": 0.8275862068965517,
+      "recall": 0.96,
+      "f1": 0.8888888888888888,
+      "roc_auc": 0.9830769230769232,
+      "confusion_matrix": [
+        [
+          21,
+          5
+        ],
+        [
+          1,
+          24
+        ]
+      ],
+      "error_counts": {
+        "true_negative": 21,
+        "false_positive": 5,
+        "false_negative": 1,
+        "true_positive": 24
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9411764705882353,
+      "precision": 0.8928571428571429,
+      "recall": 1.0,
+      "f1": 0.9433962264150944,
+      "roc_auc": 0.9961538461538462,
+      "confusion_matrix": [
+        [
+          23,
+          3
+        ],
+        [
+          0,
+          25
+        ]
+      ],
+      "error_counts": {
+        "true_negative": 23,
+        "false_positive": 3,
+        "false_negative": 0,
+        "true_positive": 25
+      }
+    },
+    "selected_model": "random_forest",
+    "selection_criterion": "Highest test F1 across the majority baseline and two candidates."
+  },
+  "clustering": {
+    "algorithm": "KMeans",
+    "n_clusters": 2,
+    "selection_criterion": "Highest silhouette score among K=2 through K=6.",
+    "comparison": {
+      "2": {
+        "silhouette_score": 0.15977907106532266,
+        "inertia": 1394.6619208714621
+      },
+      "3": {
+        "silhouette_score": 0.14166747744597818,
+        "inertia": 1270.6089140221343
+      },
+      "4": {
+        "silhouette_score": 0.14381045806479478,
+        "inertia": 1161.4331425160308
+      },
+      "5": {
+        "silhouette_score": 0.13732856901943574,
+        "inertia": 1088.1855675461609
+      },
+      "6": {
+        "silhouette_score": 0.14174112884950146,
+        "inertia": 1019.4463453669391
+      }
+    },
+    "cluster_sizes": {
+      "0": 127,
+      "1": 128
+    },
+    "silhouette_score": 0.15977907106532266,
+    "profiles": {
+      "0": {
+        "size": 127,
+        "numeric_feature_means": {
+          "rainfall_mm": 972.8856763779527,
+          "avg_temp_c": 18.509257480314954,
+          "soil_moisture_pct": 51.35324262295081,
+          "fertilizer_kg": 119.85481065573771,
+          "field_size_ha": 1.9762039370078743,
+          "cooperative_support": 0.0
+        },
+        "season_share": {
+          "A": 0.5433070866141733,
+          "B": 0.4566929133858268
+        }
+      },
+      "1": {
+        "size": 128,
+        "numeric_feature_means": {
+          "rainfall_mm": 1012.1012164062499,
+          "avg_temp_c": 19.434425,
+          "soil_moisture_pct": 49.62421333333334,
+          "fertilizer_kg": 121.75100916666666,
+          "field_size_ha": 1.9951101562500004,
+          "cooperative_support": 1.0
+        },
+        "season_share": {
+          "B": 0.578125,
+          "A": 0.421875
+        }
+      }
+    }
+  }
+}

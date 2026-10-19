@@ -1,0 +1,26 @@
+{
+  "mean_baseline": {
+    "mae": 1.9316562860438284,
+    "rmse": 2.4496685093540465,
+    "r2": -0.000889686786762045
+  },
+  "linear_regression": {
+    "mae": 0.8905641300645133,
+    "rmse": 1.1729879888674926,
+    "r2": 0.7705126739173991
+  },
+  "random_forest": {
+    "mae": 1.2788264705882346,
+    "rmse": 1.54608764299661,
+    "r2": 0.6013059138342894
+  },
+  "selected_model": "linear_regression",
+  "selection_criterion": "Lowest test RMSE across the mean baseline and two candidates.",
+  "residual_analysis": {
+    "definition": "actual minus predicted yield, in tons",
+    "mean_bias": -0.12410484101067053,
+    "standard_deviation": 1.1664042225854296,
+    "maximum_absolute_error": 4.348798382598323,
+    "interpretation": "Positive mean bias indicates underprediction; negative mean bias indicates overprediction."
+  }
+}

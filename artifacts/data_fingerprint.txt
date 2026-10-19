@@ -1,0 +1,6 @@
+Student registration: 24/26657
+Verification code: AI-A2-6657
+Seed: 6657
+Base rows: 255
+Rows including appended duplicates: 258
+CSV SHA-256: ba50b841d0210e5d158289c4ff206d953e96a446ec325d714f5c88ead892e6c2

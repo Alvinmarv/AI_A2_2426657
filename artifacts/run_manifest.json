@@ -1,0 +1,24 @@
+{
+  "student_id": "24/26657",
+  "registration_digits": "2426657",
+  "seed": 6657,
+  "verification_code": "AI-A2-6657",
+  "rows_after_cleaning": 255,
+  "sha256": "ba50b841d0210e5d158289c4ff206d953e96a446ec325d714f5c88ead892e6c2",
+  "artifacts": [
+    "data\\AI_A2_2426657.csv",
+    "artifacts/data_fingerprint.txt",
+    "artifacts/metrics.json",
+    "artifacts/regression_metrics.json",
+    "artifacts/classification_metrics.json",
+    "artifacts/clustering_metrics.json",
+    "artifacts/farm_cluster_assignments.csv",
+    "artifacts/plots/yield_actual_vs_predicted.png",
+    "artifacts/plots/classification_confusion_matrix.png",
+    "artifacts/plots/farm_clusters.png",
+    "models/yield_regression.joblib",
+    "models/high_risk_classifier.joblib",
+    "models/farm_clusters.joblib"
+  ],
+  "tests_passed": true
+}
