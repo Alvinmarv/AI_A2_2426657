@@ -9,7 +9,7 @@
 **AI Assignment 2**
 
 - Repository URL: https://github.com/Alvinmarv/AI_A2_2426657
-- Final commit hash: **[ADD AFTER FINAL COMMIT]**
+- Final source commit hash: `e8af733a4e25f384464a0ff289f4421823b1dff4`
 - Tested environment: Python 3.14.7, Windows (exact Windows build not recorded)
 
 ## 1. Project Overview

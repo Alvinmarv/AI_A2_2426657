@@ -78,4 +78,4 @@ The dataset is small and synthetic, and metrics come from one fixed split. They 
 
 ## Submission status
 
-The student identity is filled in. Confirm the repository URL and final commit hash after publishing, export this report to the required PDF name, and provide the independently produced demo video, test-log PDF, and signed declaration. Those items must reflect the student's own work and must not be fabricated.
+The student identity and source commit are recorded. Export this report to the required PDF name, and provide the independently produced demo video, test-log PDF, and signed declaration. Those items must reflect the student's own work and must not be fabricated.
